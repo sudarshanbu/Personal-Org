@@ -1,0 +1,23 @@
+<template>
+    <div class="slds-m-top_medium slds-m-bottom_x-large">
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+            SELECT STATES TO SEE DISTRICTS
+        </h2>
+
+        <!-- Button group: simple buttons -->
+        <lightning-button-group>
+            <lightning-button label="KARNATAKA" onclick={handleKarnataka} > </lightning-button>
+            <lightning-button label="ANDRA PRADESH" onclick={handleAndra}> </lightning-button>
+            <lightning-button label="MAHARASTRA" onclick={handleMaharastra}> </lightning-button>
+        </lightning-button-group>
+        <template lwc:if={iskarnataka}>
+              <c-districts onclose={closeHandleKarnataka}> </c-districts>
+        </template>  
+        <template lwc:if={isAndra}>
+              <c-andra-districts onclose={closeHandleAndra}> </c-andra-districts>
+        </template>
+        <template lwc:if={isMaharastra}>
+              <c-maharastra-district onclose={closeHandleMaharastra}> </c-maharastra-district>
+        </template>
+    </div>
+</template>

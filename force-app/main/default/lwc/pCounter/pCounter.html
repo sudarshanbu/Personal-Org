@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Counter">
+
+        <lightning-input type = "number" label="ENTER A NUMBER" value={numbers}
+            onchange={handleNumber}></lightning-input>
+                <br>
+                 <button class="slds-button slds-button_success" onclick={handleCount}>10X</button>
+                <br>
+                    <c-c-counter input-num = {numbers}></c-c-counter>
+    </lightning-card>
+</template>

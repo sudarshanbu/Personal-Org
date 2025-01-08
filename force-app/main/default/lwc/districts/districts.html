@@ -1,0 +1,15 @@
+<template>
+   <lightning-card title="DISTRICTS" icon-name="custom:custom14">
+       <ul class="slds-m-around_medium1">
+           <template for:each={karnataka} for:item="kar">
+               <li
+                   key={kar}>{kar}
+                   </li>
+               </template>
+               </ul>
+               </lightning-card>
+
+    <lightning-button id="close" label="X" onclick={close}
+                class="slds-float_left closeButton bw-button--highlight">
+            </lightning-button>
+</template>

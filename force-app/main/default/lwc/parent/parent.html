@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Details">
+
+    <lightning-input type = "text" label="Student Name" value={studentName}
+        onchange={sName}></lightning-input>
+      
+
+    <lightning-input type = "text" label="Trainer Name" value={trainerName}
+        onchange={tName}></lightning-input>
+     
+
+    <lightning-input type = "text" label="Course Name" value={courseName}
+        onchange={cName}></lightning-input>
+        
+
+    <lightning-input type = "text" label="Phone Number" value={phoneNumber}
+        onchange={phone}></lightning-input>
+      <c-child></c-child>  
+
+
+  </lightning-card>
+</template>

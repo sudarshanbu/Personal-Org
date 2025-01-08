@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Search Deatils" icon-name="custom:custom68">
+    <div class="slds-m-around_medium">
+    <lightning-input label="Account Name" value={accountName} onchange={handleNameChange}></lightning-input><br>
+    <template lwc:if={accountId}><p> Account ID : {accountId}</p><br> </template>
+    <p> Phone Number : {phoneNumber}</p><br>
+    <p> No Of Contacts : {number}</p><br>
+    <p> Last Name Of Contact : {last}</p><br>
+    <p> Total Accounts : {sum} </p><br>
+    <button class="slds-button slds-button_success" onclick={handleFind}>Find Account</button>
+    <button class="slds-button slds-button_success1" onclick={handleCreate}>Create Account</button>
+    <button class="slds-button slds-button_success" onclick={handleNumber}>No Of Contact</button>
+    <button class="slds-button slds-button_success" onclick={handleName}>Last Name of Contact</button>
+    <button class="slds-button slds-button_success" onclick={handleSum}>Total Accounts</button>
+    </div>
+    </lightning-card>
+</template>

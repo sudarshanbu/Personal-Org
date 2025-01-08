@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="CREATE ACCOUNT/CONTACT/OPPORTUNITY" icon-name="custom:custom15">
+        <lightning-button label="ACCOUNT" onclick={handleAccount} > </lightning-button>
+        <lightning-button label="CONTACT" onclick={handleContact} > </lightning-button>
+    </lightning-card>
+
+        <template lwc:if={isAccount}>
+              <c-account onclose={closeHandleAccount}> </c-account>
+        </template>
+
+        <template lwc:if={isContact}>
+              <c-contact onclose={closeHandleContact}> </c-contact>
+        </template>
+</template>

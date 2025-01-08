@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Districts" icon-name="custom:custom14">
+       <ul class="slds-m-around_medium">
+           <template for:each={andra} for:item="ad">
+               <li key={ad}>{ad}</li>
+               </template>
+               </ul>
+               </lightning-card>
+
+    <lightning-button id="close" label="X" onclick={close}
+                class="slds-float_left closeButton bw-button--highlight2">
+            </lightning-button>
+
+</template>
